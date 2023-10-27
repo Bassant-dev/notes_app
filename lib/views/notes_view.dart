@@ -17,7 +17,7 @@ class NotesView extends StatelessWidget {
             borderRadius: BorderRadius.circular(16)
           ),
             context: context, builder:(context){
-          return AddNoteBottomSheet();
+          return const AddNoteBottomSheet();
         });
       },
         backgroundColor: kPrimaryColor,
