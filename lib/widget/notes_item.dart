@@ -37,7 +37,9 @@ final NoteModel note;
                     color: Colors.black.withOpacity(.5)
                 )),
               ),
-              trailing: IconButton(onPressed: (){},icon: const Icon(FontAwesomeIcons.trash,color: Colors.black,size: 24,),),
+              trailing: IconButton(onPressed: (){
+                note.delete();
+              },icon: const Icon(FontAwesomeIcons.trash,color: Colors.black,size: 24,),),
             ),
             Padding(
               padding: const EdgeInsets.only(right: 24),
