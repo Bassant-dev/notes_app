@@ -6,6 +6,8 @@ import 'package:notes_app/widget/custom_text_field.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 
+import 'colors_list_view.dart';
+
 class AddNoteForm extends StatefulWidget {
   const AddNoteForm({
     super.key,
@@ -45,6 +47,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
             hint: 'content',
             maxLines: 5,
           ),
+          const ColorsListView(),
           const SizedBox(
             height: 32,
           ),
